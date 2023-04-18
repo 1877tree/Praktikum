@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<head>
+	<style>
+		h1{
+			font-family: Arial,serif;
+			font-size: 60px;
+			font-weight: bold;
+			text-align: center;
+			color: lightgray;
+		}
+
+		.center {
+			margin: auto;
+			width: 50%;
+			padding: 20px;
+			font-family: Arial,serif;
+			color: lightgray;
+		}
+
+		.quadrat1{
+			position: relative;
+			font-size: 40px;
+			background-color: black;
+			color: lightgray;
+			width: 50px;
+			height: 50px;
+			text-align: center;
+            flex: 0 0 20%;
+		}
+
+		.quadrat_buttons {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 10px;
+		}
+	</style>
+
+	<title>Benita's Taschenrechner</title>
+</head>
+
+<body style="background-color: dimgrey">
+	<h1>Taschenrechner</h1>
+	<br>
+	<br>
+	<div class="center">
+		<input type="number" id="input1">
+		<br><br>
+		<input type="number" id="input2">
+
+		<label for="operators">Rechenart</label>
+		<select name="operators" id="operators">
+			<option value="+">+</option>
+			<option value="-">-</option>
+			<option value="*">*</option>
+			<option value="/">/</option>
+		</select>
+		<br><br>
+
+		<button id="button" onclick="calculate()">dr&uumlcken f&uumlr das Ergebnis</button>
+
+		<h2>Ergebnis:</h2>
+		<div id="result"></div>
+
+		<div class="quadrat_buttons">
+			<div class="quadrat1">
+				1
+			</div>
+
+			<div class="quadrat1">
+				2
+			</div>
+
+			<div class="quadrat1">
+				3
+			</div>
+
+			<div class="quadrat1">
+			+
+		</div>
+
+			<div class="quadrat1">
+				4
+			</div>
+
+			<div class="quadrat1">
+				5
+			</div>
+
+			<div class="quadrat1">
+				6
+			</div>
+
+			<div class="quadrat1">
+				-
+			</div>
+
+			<div class="quadrat1">
+				7
+			</div>
+
+			<div class="quadrat1">
+				8
+			</div>
+
+			<div class="quadrat1">
+				9
+			</div>
+
+			<div class="quadrat1">
+				0
+			</div>
+
+			<div class="quadrat1">
+				.
+			</div>
+
+			<div class="quadrat1">
+				=
+			</div>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
+
