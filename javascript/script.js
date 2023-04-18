@@ -22,7 +22,7 @@ function calculate() {
 			break;
 		case "/":
 			if(number2 === 0) {
-				alert("durch null darf man nicht teilen")
+				alert("durch null darf man nicht teilen!")
 			} else {
 				result = number1 / number2
 			}
