@@ -1,0 +1,58 @@
+* {
+	font-family: Impact;
+}
+
+h1 {
+	font-size: 60px;
+	text-align: center;
+	color: #0d1b2a;
+}
+
+.center {
+	margin: auto;
+	width: 50%;
+	padding: 20px;
+	color: #0d1b2a;
+}
+
+#quadrat_buttons button {
+	position: relative;
+	display: block;
+	font-size: 40px;
+	color: #415a77;
+	background-color: #0d1b2a;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	flex: 0 0 20%;
+	border: none;
+	flex-grow: 1;
+}
+
+#quadrat_buttons button:hover {
+	color: #0d1b2a;
+	cursor: pointer;
+	background-color: #415a77;
+	border: groove #0d1b2a;
+}
+
+#quadrat_buttons button.delete {
+	width: 100%;
+}
+
+
+#quadrat_buttons {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	justify-content: center;
+}
+
+#input_calc {
+	text-align: center;
+	margin-bottom: 20px;
+	font-size: 26px;
+	height: 50px;
+	border: #0d1b2a 3px solid;
+	vertical-align: center;
+}

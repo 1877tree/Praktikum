@@ -1,124 +1,40 @@
 <!DOCTYPE html>
 <head>
-	<style>
-		h1{
-			font-family: Arial,serif;
-			font-size: 60px;
-			font-weight: bold;
-			text-align: center;
-			color: lightgray;
-		}
-
-		.center {
-			margin: auto;
-			width: 50%;
-			padding: 20px;
-			font-family: Arial,serif;
-			color: lightgray;
-		}
-
-		.quadrat1{
-			position: relative;
-			font-size: 40px;
-			background-color: black;
-			color: lightgray;
-			width: 50px;
-			height: 50px;
-			text-align: center;
-            flex: 0 0 20%;
-		}
-
-		.quadrat_buttons {
-			display: flex;
-			flex-wrap: wrap;
-			gap: 10px;
-		}
-	</style>
-
 	<title>Benita's Taschenrechner</title>
+	<meta charset="utf-8">
+
+	<link href="style.css" rel="stylesheet">
 </head>
 
-<body style="background-color: dimgrey">
-	<h1>Taschenrechner</h1>
-	<br>
-	<br>
+<body style="background-color: #415a77">
 	<div class="center">
-		<input type="number" id="input1">
-		<br><br>
-		<input type="number" id="input2">
+		<h1>Benita's Taschenrechner</h1>
 
-		<label for="operators">Rechenart</label>
-		<select name="operators" id="operators">
-			<option value="+">+</option>
-			<option value="-">-</option>
-			<option value="*">*</option>
-			<option value="/">/</option>
-		</select>
-		<br><br>
+		<div id="input_calc"></div>
 
-		<button id="button" onclick="calculate()">dr&uumlcken f&uumlr das Ergebnis</button>
+		<div id="quadrat_buttons">
+			<button onclick="input(1)">1</button>
+			<button onclick="input(2)">2</button>
+			<button onclick="input(3)">3</button>
+			<button onclick="input('+')">+</button>
+			<button onclick="input(4)">4</button>
+			<button onclick="input(5)">5</button>
+			<button onclick="input(6)">6</button>
+			<button onclick="input('-')">-</button>
+			<button onclick="input(7)">7</button>
+			<button onclick="input(8)">8</button>
+			<button onclick="input(9)">9</button>
+			<button onclick="input('*')">*</button>
+			<button onclick="input(0)">0</button>
+			<button onclick="input('.')">.</button>
+			<button onclick="rechnen()">=</button>
+			<button onclick="input('/')">/</button>
 
-		<h2>Ergebnis:</h2>
-		<div id="result"></div>
-
-		<div class="quadrat_buttons">
-			<div class="quadrat1">
-				1
-			</div>
-
-			<div class="quadrat1">
-				2
-			</div>
-
-			<div class="quadrat1">
-				3
-			</div>
-
-			<div class="quadrat1">
-			+
-		</div>
-
-			<div class="quadrat1">
-				4
-			</div>
-
-			<div class="quadrat1">
-				5
-			</div>
-
-			<div class="quadrat1">
-				6
-			</div>
-
-			<div class="quadrat1">
-				-
-			</div>
-
-			<div class="quadrat1">
-				7
-			</div>
-
-			<div class="quadrat1">
-				8
-			</div>
-
-			<div class="quadrat1">
-				9
-			</div>
-
-			<div class="quadrat1">
-				0
-			</div>
-
-			<div class="quadrat1">
-				.
-			</div>
-
-			<div class="quadrat1">
-				=
-			</div>
+			<button onclick="input_delete_all()" class="delete">C</button>
+			<button onclick="input_delete_one()" class="delete">CE</button>
 		</div>
 	</div>
+
 	<script src="script.js"></script>
 </body>
 </html>
