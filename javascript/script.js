@@ -78,3 +78,7 @@ function rechnen() {
 
 	document.getElementById("input_calc").innerHTML += " = " + result
 }
+
+window.addEventListener("keydown", (event) => {
+
+});
